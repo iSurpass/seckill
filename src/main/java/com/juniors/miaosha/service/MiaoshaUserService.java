@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
+ * 秒杀项目---用户服务类
  * @author Juniors
  */
 @Service
@@ -23,7 +24,11 @@ public class MiaoshaUserService {
 
     }
 
-
+    /**
+     *
+     * @param loginVo
+     * @return
+     */
     public CodeMsg login(LoginVo loginVo) {
 
         if (loginVo == null){
@@ -45,7 +50,6 @@ public class MiaoshaUserService {
         if (!calcPass.equals(pwdDB)){
             return CodeMsg.PASSWORD_ERROR;
         }
-
         return CodeMsg.SUCCESS;
     }
 }

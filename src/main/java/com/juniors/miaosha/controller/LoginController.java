@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @author Juniors
  */
 @Controller
-@RequestMapping("/demo")
+@RequestMapping("/login")
 public class LoginController {
 
     // log4j 日志
@@ -61,11 +61,9 @@ public class LoginController {
         //登录
         CodeMsg loginMsg = miaoshaUserService.login(loginVo);
         if (loginMsg.getCode() == 0){
-            System.out.println("1111111111111");
             return Result.success(true);
 
         }else {
-            System.out.println("2222222222222");
             return Result.error(loginMsg);
         }
     }

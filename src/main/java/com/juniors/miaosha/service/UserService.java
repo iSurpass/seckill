@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class UserService {
 
+    //Service 注入 Dao
     @Autowired
     UserDao userDao;
 
