@@ -16,7 +16,7 @@ public class RedisPoolFactory {
     RedisConfig redisConfig;
 
     /**
-     * SpringBoot Bean 注入对象
+     * SpringBoot Bean 创建对象 ----------SpringBoot新特性
      * @return
      */
     @Bean

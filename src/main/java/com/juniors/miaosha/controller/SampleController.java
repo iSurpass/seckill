@@ -13,18 +13,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
+ * 示例Controller类
  * @author Juniors
  */
 @Controller
 @RequestMapping("/demo")
 public class SampleController {
 
+
+    //注入userService的Bean对象
     @Autowired
     UserService userService;
 
     @Autowired
     RedisService redisService;
 
+    /**
+     * thymeleaf模板实例
+     * @param model
+     * @return
+     */
     @RequestMapping("/thymeleaf")
     public String thymeleaf(Model model){
 
@@ -46,6 +54,10 @@ public class SampleController {
         //return new Result(0,"error");
     }
 
+    /**
+     * 数据库demo实例---get
+     * @return
+     */
     @RequestMapping(path = "/db/get")
     @ResponseBody
     public Result<User> dbGet(){
@@ -54,6 +66,10 @@ public class SampleController {
         return Result.success(user);
     }
 
+    /**
+     * 数据库demo---insert
+     * @return
+     */
     @RequestMapping(path = "/db/insert")
     @ResponseBody
     public Result<Boolean> dbInsert(){
@@ -62,6 +78,10 @@ public class SampleController {
         return Result.success(true);
     }
 
+    /**
+     * Redis---demo---get
+     * @return
+     */
     @RequestMapping(path = "/redis/get")
     @ResponseBody
     public Result<User> redisGet(){
@@ -70,6 +90,10 @@ public class SampleController {
         return Result.success(user);
     }
 
+    /**
+     * Redis---demo---set
+     * @return
+     */
     @RequestMapping(path = "/redis/set")
     @ResponseBody
     public Result<Boolean> redisSet(){

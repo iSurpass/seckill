@@ -132,6 +132,12 @@ public class RedisService {
         }
     }
 
+    /**
+     * 由 Bean 对象转换为 String
+     * @param value
+     * @param <T>
+     * @return
+     */
     private <T> String beanToString(T value) {
         if (value == null){
             return null;
@@ -149,6 +155,13 @@ public class RedisService {
 
     }
 
+    /**
+     * 由于 String 转换为 Bean 对象
+     * @param str
+     * @param clazz
+     * @param <T>
+     * @return
+     */
     private <T> T stringToBean(String str,Class<T> clazz) {
 
         if (str == null || str.length() <= 0 || clazz == null){
@@ -165,6 +178,10 @@ public class RedisService {
         }
     }
 
+    /**
+     * 不用redis池及时返回close
+     * @param jedis
+     */
     private void returnToPool(Jedis jedis) {
         if (jedis != null){
             jedis.close();

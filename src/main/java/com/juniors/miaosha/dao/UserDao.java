@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 /**
+ * UserDao类数据库事务封装
  * @author Juniors
  */
 @Mapper

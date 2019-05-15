@@ -1,7 +1,322 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0461a17f-ea0c-4733-91e5-cb83b1264cca" name="Default" comment="" />
+    <list default="true" id="0461a17f-ea0c-4733-91e5-cb83b1264cca" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/Util/MD5Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/Util/VaildatorUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/MiaoshaUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/MiaoshaUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/MiaoshaUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/vo/LoginVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.github/stale.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.jscsrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.jshintignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/Gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/build/release.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/changelog.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/ajaxSubmit-integration-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/bootstrap/index-bs4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/bootstrap/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/captcha.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/fonts/Anorexia.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/image_req.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/images/button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/images/image.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/newsession.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/process.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/rand.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/cinema/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/cinema/plan_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/cinema/refer_madness.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/cinema/saucer_men.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/css/cmxform.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/css/cmxformTemplate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/css/core.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/css/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/custom-messages-data-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/custom-methods-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/dynamic-totals.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/errorcontainer-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/errors-within-labels.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/file_input.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/images/checked.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/images/cmxform-divider.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/images/cmxform-fieldset.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/images/unchecked.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/jquerymobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/login/images/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/login/images/header1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/login/images/page.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/login/images/required_star.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/login/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/login/screen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/backRequiredGray.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/back_green-fade.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/back_nav_blue.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/blank.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/button-submit.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/left-nav-callout-long.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/login-sprite.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/logo_marketo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/sf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/step1-24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/step2-24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/step3-24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/tab-sprite.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/tab_green.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/time.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/toggle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/images/warning.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/jquery.maskedinput.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/mktSignup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/step2.htm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/marketo/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/milk/bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/milk/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/milk/left_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/milk/milk.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/milk/milk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/milk/right_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/multipart/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/multipart/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/radio-checkbox-select-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/requirejs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/requirejs/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/semantic-ui/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/site-demos.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/themerollered.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/tinymce/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/tinymce/themes/simple/editor_template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/tinymce/themes/simple/img/icons.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/tinymce/themes/simple/langs/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/tinymce/themes/simple/skins/default/ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/tinymce/tiny_mce.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/tinymce4/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery-1.11.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery-1.7.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery-1.8.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery-1.9.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery-3.1.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery.mockjax-1.5.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery.mockjax-2.2.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery.mockjax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/jquery.simulate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/lib/require.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/abaRoutingNumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/accept.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/additional.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/alphanumeric.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/bankaccountNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/bankorgiroaccountNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/bic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/cifES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/cnhBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/cnpjBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/cpfBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/creditcard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/creditcardtypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/currency.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/dateFA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/dateITA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/dateNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/extension.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/giroaccountNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/greaterThan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/greaterThanEqual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/iban.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/integer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/ipv4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/ipv6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/lessThan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/lessThanEqual.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/lettersonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/letterswithbasicpunc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/maxfiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/maxsize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/maxsizetotal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/mobileNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/mobileRU.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/mobileUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/netmask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/nieES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/nifES.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/nipPL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/nisBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/notEqualTo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/nowhitespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/pattern.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/phoneNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/phonePL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/phoneUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/phoneUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/phonesUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/postalCodeCA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/postalcodeBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/postalcodeIT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/postalcodeNL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/postcodeUK.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/require_from_group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/skip_or_fill_minimum.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/statesUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/strippedminlength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/time.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/time12h.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/url2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/vinUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/zipcodeUS.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/additional/ziprange.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/ajax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_bn_BD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_es_AR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_es_PE.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ge.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_hy_AM.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_is.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ka.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_kk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_my.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_pt_BR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_pt_PT.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_sd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_sr_lat.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_tj.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_ur.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_zh_TW.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/methods_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/methods_es_CL.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/methods_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/methods_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/methods_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/methods_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/.jshintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/additional/abaRoutingNumber.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/additional/cnhBR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/additional/creditcard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/additional/netmask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/aria.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/error-placement.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/methods.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/validation.jquery.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.4.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.md5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/mobile/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/mobile/need/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/theme/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/theme/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/theme/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/theme/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/theme/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/layer/theme/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/BasePrefix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/BasePrefix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/OrderKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/OrderKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisPoolFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisPoolFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/UserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/UserKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/CodeMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/controller/SampleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/controller/SampleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/BasePrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/BasePrefix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/KeyPrefix.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/KeyPrefix.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/OrderKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/OrderKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/RedisService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/UserKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/redis/UserKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/juniors/miaosha/result/CodeMsg.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,17 +327,103 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/miaosha$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1557762378317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/miaosha$MainApplication.ic" NAME="MainApplication Coverage Results" MODIFIED="1557912077333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.juniors.miaosha.*</FILTER>
     </SUITE>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="713">
+              <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+              <folding>
+                <element signature="e#602#603#0" expanded="true" />
+                <element signature="e#647#648#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2185">
+              <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+              <folding>
+                <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h2#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MD5Util.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/Util/MD5Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+              <folding>
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#945#946#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MiaoshaUserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/MiaoshaUserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="134">
+              <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="SampleController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
+            <state relative-caret-position="759">
+              <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -30,104 +431,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java">
+      <file leaf-file-name="LoginVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/vo/LoginVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KeyPrefix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/KeyPrefix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasePrefix.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/BasePrefix.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+            <state relative-caret-position="529">
+              <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
               <folding>
-                <element signature="e#377#378#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserKey.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/UserKey.java">
+      <file leaf-file-name="CodeMsg.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/CodeMsg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-              <folding>
-                <element signature="e#157#158#0" expanded="true" />
-                <element signature="e#201#202#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OrderKey.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/OrderKey.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-              <folding>
-                <element signature="e#159#160#0" expanded="true" />
-                <element signature="e#203#204#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Jedis.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.1/jedis-2.9.1.jar!/redis/clients/jedis/Jedis.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="139" column="33" lean-forward="true" selection-start-line="139" selection-start-column="33" selection-end-line="139" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="445">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-483">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="529">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
@@ -137,34 +458,48 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/templates/hello.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/CodeMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/Result.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/UserService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/RedisService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisPoolFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/MainApplication.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/Prefix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/OrderKey.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/KeyPrefix.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisPoolFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/UserKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/BasePrefix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/KeyPrefix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/OrderKey.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/loginin.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/Util/VaildatorUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/MiaoshaUser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/MiaoshaUserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/vo/LoginVo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/CodeMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/MiaoshaUserService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/common.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/juniors/miaosha/Util/MD5Util.java" />
       </list>
     </option>
   </component>
@@ -182,7 +517,9 @@
     </option>
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/package.json" />
+    </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
@@ -190,12 +527,15 @@
     <option name="width" value="981" />
     <option name="height" value="1020" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -319,7 +659,46 @@
               <item name="miaosha" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="juniors" type="462c0819:PsiDirectoryNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="juniors" type="462c0819:PsiDirectoryNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
@@ -333,7 +712,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -350,7 +729,23 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Java2019\ThreadProject\miaosha\src\main\resources\static\jquery-validation-master\src\localization" />
+      <recent name="D:\Java2019\ThreadProject\miaosha\src\main\resources\static\jquery-validation-master\src" />
+      <recent name="D:\Java2019\ThreadProject\miaosha\src\main\resources\static\jquery-validation-master" />
+      <recent name="D:\Java2019\ThreadProject\miaosha\src\main\resources\static\js" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.juniors.miaosha.controller" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java2019\ThreadProject\miaosha\src\main\resources\templates" />
+      <recent name="D:\Java2019\ThreadProject\miaosha\src\main\resources\static\bootstrap" />
+      <recent name="D:\Java2019\ThreadProject\miaosha\src\main\resources\static" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -364,7 +759,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MD5Util">
+    <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.juniors.miaosha.Util.MD5Util" />
+      <module name="miaosha" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.juniors.miaosha.Util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -416,8 +822,13 @@
       <properties />
       <listeners />
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.MainApplication" />
+      <item itemvalue="Application.MD5Util" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MD5Util" />
         <item itemvalue="Spring Boot.MainApplication" />
       </list>
     </recent_temporary>
@@ -434,39 +845,44 @@
       <updated>1557649300142</updated>
       <workItem from="1557649302093" duration="11733000" />
       <workItem from="1557719385645" duration="9712000" />
-      <workItem from="1557814518959" duration="11178000" />
+      <workItem from="1557814518959" duration="28191000" />
+      <workItem from="1557906339280" duration="667000" />
+      <workItem from="1557907089571" duration="2630000" />
+      <workItem from="1557909762257" duration="3115000" />
+      <workItem from="1557912950927" duration="6246000" />
+      <workItem from="1557929450693" duration="1068000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32623000" />
+    <option name="totallyTimeSpent" value="63362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="2" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="4" weight="0.13511327" />
+      <window_info anchor="right" id="Database" order="4" weight="0.13500404" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39963505" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.44049734" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.37043795" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.10948905" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info active="true" anchor="bottom" id="Run" order="1" visible="true" weight="0.3250444" />
       <window_info anchor="bottom" id="Spring" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25464836" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.18978103" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26515764" />
       <window_info anchor="right" id="Bean Validation" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="5" />
@@ -477,42 +893,42 @@
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32983023" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="10" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.45437956" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.10948905" />
       <window_info anchor="bottom" id="Spring" order="0" />
       <window_info id="Image Layers" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="1" visible="true" weight="0.3211679" />
       <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32983023" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="4" weight="0.18978103" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.44049734" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="8" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.37043795" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" />
       <window_info anchor="bottom" id="Database Changes" order="6" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Maven Projects" order="2" />
-      <window_info anchor="bottom" id="Find" order="10" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25464836" />
-      <window_info anchor="right" id="Database" order="4" weight="0.13511327" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19967663" />
+      <window_info anchor="right" id="Database" order="4" weight="0.13500404" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.32983023" />
+      <window_info anchor="bottom" id="Find" order="10" weight="0.45437956" />
       <window_info anchor="right" id="Bean Validation" order="6" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39963505" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -523,139 +939,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.16/tomcat-embed-core-9.0.16.jar!/org/apache/coyote/AbstractProcessorLight.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisPoolFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="20" lean-forward="true" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="69" column="5" lean-forward="true" selection-start-line="69" selection-start-column="5" selection-end-line="69" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="30" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/MainApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="55" column="34" lean-forward="true" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="18" column="37" lean-forward="true" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -691,9 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -701,37 +989,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properites" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties.properties" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/hesllo.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/hello.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/CodeMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.16/tomcat-embed-core-9.0.16.jar!/org/apache/coyote/AbstractProcessorLight.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -743,16 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -763,97 +1010,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisPoolFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.16/tomcat-embed-core-9.0.16.jar!/org/apache/tomcat/util/net/SocketProcessorBase.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/OrderKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-          <folding>
-            <element signature="e#159#160#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/UserKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="8" column="22" lean-forward="true" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <element signature="e#157#158#0" expanded="true" />
-            <element signature="e#201#202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/BasePrefix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding>
-            <element signature="e#377#378#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="76" column="23" lean-forward="true" selection-start-line="76" selection-start-column="23" selection-end-line="76" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -866,17 +1026,250 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/KeyPrefix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="46">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisService.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="181" column="24" selection-start-line="181" selection-start-column="24" selection-end-line="181" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/RedisPoolFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/UserKey.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
-          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/util.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/BasePrefix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/redis/OrderKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-3.4.1.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/validation.jquery.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-690" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/demo/captcha/image_req.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/loginin.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_zh.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/layer/layer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/jquery-validation-master/src/localization/messages_zh_TW.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="13" column="21" lean-forward="true" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/hello.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/Util/VaildatorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/domain/MiaoshaUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/dao/MiaoshaUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/lang/Long.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12029">
+          <caret line="555" column="62" selection-start-line="555" selection-start-column="62" selection-end-line="555" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="72" column="17" lean-forward="true" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="33" column="38" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding>
+            <element signature="e#602#603#0" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="95" column="31" selection-start-line="95" selection-start-column="31" selection-end-line="95" selection-end-column="31" />
+          <folding>
+            <element signature="n#style#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h2#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/SampleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/vo/LoginVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="29" column="27" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/result/CodeMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="33" lean-forward="true" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/service/MiaoshaUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="42" column="39" lean-forward="true" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/juniors/miaosha/Util/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding>
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#945#946#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -884,6 +1277,30 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -897,6 +1314,19 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>miaosha</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -908,6 +1338,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

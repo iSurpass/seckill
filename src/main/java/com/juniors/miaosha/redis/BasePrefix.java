@@ -20,11 +20,6 @@ public abstract class BasePrefix implements KeyPrefix{
     }
 
     @Override
-    public int expireSeconds() {
-        return expireSeconds;
-    }
-
-    @Override
     public String getPrefix() {
         String className = getClass().getSimpleName();
         return className+":"+prefix;

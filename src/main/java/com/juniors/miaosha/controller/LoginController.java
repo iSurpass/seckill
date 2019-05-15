@@ -1,11 +1,17 @@
 package com.juniors.miaosha.controller;
 
+import com.juniors.miaosha.Util.VaildatorUtil;
 import com.juniors.miaosha.domain.User;
+import com.juniors.miaosha.redis.RedisService;
 import com.juniors.miaosha.redis.UserKey;
 import com.juniors.miaosha.result.CodeMsg;
 import com.juniors.miaosha.result.Result;
-import com.juniors.miaosha.redis.RedisService;
+import com.juniors.miaosha.service.MiaoshaUserService;
 import com.juniors.miaosha.service.UserService;
+import com.juniors.miaosha.vo.LoginVo;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,8 +24,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @Controller
 @RequestMapping("/demo")
-public class SampleController {
+public class LoginController {
 
+    // log4j 日志
+    private static Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     //注入userService的Bean对象
     @Autowired
@@ -28,80 +36,37 @@ public class SampleController {
     @Autowired
     RedisService redisService;
 
-    /**
-     * thymeleaf模板实例
-     * @param model
-     * @return
-     */
-    @RequestMapping("/thymeleaf")
-    public String thymeleaf(Model model){
+    @Autowired
+    MiaoshaUserService miaoshaUserService;
 
-        model.addAttribute("name","Juniors");
-        return "hello";
+    @RequestMapping(path = "/toLogin")
+    public String toLogin(){
+        return "login";
     }
 
-    @RequestMapping(path = "/hello")
+    @RequestMapping(path = "/doLogin")
     @ResponseBody
-    public Result<String> hello(){
-        return Result.success("Skr");
-        //return new Result(0,"success","Skr");      优化前的语句逻辑，这就是使用 泛型 的好处
-    }
+    public Result<Boolean> doLogin(LoginVo loginVo){
 
-    @RequestMapping(path = "/helloError")
-    @ResponseBody
-    public Result<String> helloError(){
-        return Result.error(CodeMsg.SERVER_ERROR);
-        //return new Result(0,"error");
-    }
+        logger.info(loginVo.toString());
+        //参数校验
+        String passwdInput = loginVo.getPassword();
+        String mobile = loginVo.getMobile();
+        if(StringUtils.isEmpty(passwdInput)){
+            return Result.error(CodeMsg.MOBILE_EMPTY);
+        }
+        if (VaildatorUtil.isMobile(mobile)){
+            return Result.error(CodeMsg.MOBILE_ERROR);
+        }
+        //登录
+        CodeMsg loginMsg = miaoshaUserService.login(loginVo);
+        if (loginMsg.getCode() == 0){
+            System.out.println("1111111111111");
+            return Result.success(true);
 
-    /**
-     * 数据库demo实例---get
-     * @return
-     */
-    @RequestMapping(path = "/db/get")
-    @ResponseBody
-    public Result<User> dbGet(){
-
-        User user = userService.getById(1);
-        return Result.success(user);
-    }
-
-    /**
-     * 数据库demo---insert
-     * @return
-     */
-    @RequestMapping(path = "/db/insert")
-    @ResponseBody
-    public Result<Boolean> dbInsert(){
-
-        userService.transaction();
-        return Result.success(true);
-    }
-
-    /**
-     * Redis---demo---get
-     * @return
-     */
-    @RequestMapping(path = "/redis/get")
-    @ResponseBody
-    public Result<User> redisGet(){
-
-        User user = redisService.get(UserKey.getById,""+1,User.class);
-        return Result.success(user);
-    }
-
-    /**
-     * Redis---demo---set
-     * @return
-     */
-    @RequestMapping(path = "/redis/set")
-    @ResponseBody
-    public Result<Boolean> redisSet(){
-
-        User user = new User();
-        user.setId(1);
-        user.setName("Kobe");
-        Boolean b = redisService.set(UserKey.getById,""+user.getId(),user);  //生成id： “UserKey:id1"
-        return Result.success(b);
+        }else {
+            System.out.println("2222222222222");
+            return Result.error(loginMsg);
+        }
     }
 }

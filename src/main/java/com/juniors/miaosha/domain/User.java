@@ -1,6 +1,7 @@
 package com.juniors.miaosha.domain;
 
 /**
+ * User类
  * @author Juniors
  */
 public class User {
