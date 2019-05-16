@@ -39,19 +39,8 @@ public class GoodsController {
 
     @RequestMapping(path = "/toList")
     public String toList(Model model,
-                         @CookieValue(value = MiaoshaUserService.COOKIE_NAME_TOKEN,required = false)String cookieToken,
-                         //当token没有放在Cookie里的情况
-                         @RequestParam(value = MiaoshaUserService.COOKIE_NAME_TOKEN)String paramToken){
-
-        if (StringUtils.isEmpty(cookieToken) && StringUtils.isEmpty(paramToken)){
-            return "login";
-        }
-        //paramToken 优先级大于 cookieToken
-        String token = StringUtils.isEmpty(paramToken)?cookieToken:paramToken;
-        MiaoshaUser user = miaoshaUserService.getByToken(token);
-        System.out.println(user.getNickname());
+                         MiaoshaUser user){
         model.addAttribute("user",user);
-        System.out.println(user.getId());
         return "goods_list";
     }
 
@@ -62,7 +51,6 @@ public class GoodsController {
         logger.info(loginVo.toString());
         //登录
         miaoshaUserService.login(response,loginVo);
-
         return Result.success(true);
     }
 }

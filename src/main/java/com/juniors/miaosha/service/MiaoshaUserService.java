@@ -39,13 +39,29 @@ public class MiaoshaUserService {
     }
 
 
-    public MiaoshaUser getByToken(String token){
+    public MiaoshaUser getByToken(HttpServletResponse response,String token){
         if (StringUtils.isEmpty(token)){
             return null;
         }
-        return redisService.get(MiaoshaUserKey.token,token,MiaoshaUser.class);
+        MiaoshaUser user = redisService.get(MiaoshaUserKey.token,token,MiaoshaUser.class);
+        //更新Cookie以延长有效期
+        if (user != null){
+            addCookie(response,user);
+        }
+        return user;
     }
 
+
+    private void addCookie(HttpServletResponse response,MiaoshaUser user){
+        String token = UUIDUtil.uuid();
+        //
+        redisService.set(MiaoshaUserKey.token,token,user);
+
+        Cookie cookie = new Cookie(COOKIE_NAME_TOKEN,token);
+        cookie.setMaxAge(MiaoshaUserKey.token.getExpireSeconds());
+        cookie.setPath("/");
+        response.addCookie(cookie);
+    }
     /**
      *
      * @param loginVo
@@ -54,7 +70,6 @@ public class MiaoshaUserService {
     public boolean login(HttpServletResponse response, LoginVo loginVo) {
 
         if (loginVo == null){
-            System.out.println("77777777777777777");
             throw new GlobalException(CodeMsg.SERVER_ERROR);
         }
         String mobile = loginVo.getMobile();
