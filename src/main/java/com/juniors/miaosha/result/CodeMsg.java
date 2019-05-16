@@ -13,6 +13,7 @@ public class CodeMsg {
     //通常异常 5001XX
     public static CodeMsg SUCCESS = new CodeMsg(0,"success");
     public static CodeMsg SERVER_ERROR = new CodeMsg(500100,"服务端异常");
+    public static CodeMsg BIND_ERROR = new CodeMsg(500101,"%s");
 
     //登录模块 5002XX
     public static CodeMsg SESSION_ERROR = new CodeMsg(500210,"Session不存在或者已经失效");
@@ -32,6 +33,12 @@ public class CodeMsg {
     public CodeMsg(int i, String msg) {
         this.code = i;
         this.msg = msg;
+    }
+
+    public CodeMsg fillArgs(Object... args){
+        int code = this.code;
+        String message = String.format(this.msg,args);
+        return new CodeMsg(code,message);
     }
 
     public int getCode() {

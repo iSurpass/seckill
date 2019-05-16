@@ -1,4 +1,4 @@
-package com.juniors.miaosha.Util;
+package com.juniors.miaosha.util;
 
 import org.apache.commons.codec.digest.DigestUtils;
 

@@ -82,30 +82,26 @@ function doLogin() {
     var str = "" + salt.charAt(0) + salt.charAt(2) + inputPassword + salt.charAt(4);
     var password = $.md5(str);
     var mobile = document.getElementById("mobile").value;
-    console.log("333333");
     $.ajax({
-        url: "/demo/doLogin",
+        url: "/login/doLogin",
         type:"POST",
         data:{
         mobile:mobile,
         password:password
     },
     success:function(data) {
-        console.log("-------");
         layer.closeAll();
-        console.log("-------");
         if (data.code == 0){
-            console.log("!!!!!!!");
-            layer.msg("SUCCESS")
+            layer.msg("SUCCESS");
+            console.log("123123123")
+            window.location.href="/goods/toList";
         } else {
-            console.log("*****");
             layer.msg(data.msg)
         }
         console.log(data);
     },
     error:function () {
         layer.closeAll();
-        console.log("555555555");
     }
     });
 }

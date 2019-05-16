@@ -1,4 +1,4 @@
-package com.juniors.miaosha.Util;
+package com.juniors.miaosha.util;
 
 import org.apache.commons.lang3.StringUtils;
 
@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  */
 public class VaildatorUtil {
 
-    private static final Pattern mobile_patter = Pattern.compile("1\\{10}");
+    private static final Pattern mobile_patter = Pattern.compile("1\\d{10}");
 
     public static boolean isMobile(String src){
         if (StringUtils.isEmpty(src)){

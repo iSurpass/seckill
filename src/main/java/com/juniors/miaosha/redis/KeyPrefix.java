@@ -5,8 +5,8 @@ package com.juniors.miaosha.redis;
  */
 public interface KeyPrefix {
 
-    public int getExpireSeconds();
-
     public String getPrefix();
+
+    public int getExpireSeconds();
 
 }

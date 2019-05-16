@@ -10,13 +10,16 @@ public abstract class BasePrefix implements KeyPrefix{
     private String prefix;
 
     public BasePrefix(String prefix){  //默认0代表永不过期
-        this.prefix = prefix;
-        this.expireSeconds = 0;
+        this(0,prefix);
     }
 
     public BasePrefix(int expireSeconds,String prefix){
         this.expireSeconds = expireSeconds;
         this.prefix = prefix;
+    }
+
+    public int getExpireSeconds() {
+        return expireSeconds;
     }
 
     @Override
