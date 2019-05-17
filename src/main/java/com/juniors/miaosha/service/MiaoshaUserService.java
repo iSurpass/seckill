@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
@@ -46,14 +45,13 @@ public class MiaoshaUserService {
         MiaoshaUser user = redisService.get(MiaoshaUserKey.token,token,MiaoshaUser.class);
         //更新Cookie以延长有效期
         if (user != null){
-            addCookie(response,user);
+            addCookie(response,token,user);
         }
         return user;
     }
 
 
-    private void addCookie(HttpServletResponse response,MiaoshaUser user){
-        String token = UUIDUtil.uuid();
+    private void addCookie(HttpServletResponse response,String token,MiaoshaUser user){
         //
         redisService.set(MiaoshaUserKey.token,token,user);
 
@@ -91,13 +89,7 @@ public class MiaoshaUserService {
 
         //生成token---->Redis
         String token = UUIDUtil.uuid();
-        //
-        redisService.set(MiaoshaUserKey.token,token,user);
-
-        Cookie cookie = new Cookie(COOKIE_NAME_TOKEN,token);
-        cookie.setMaxAge(MiaoshaUserKey.token.getExpireSeconds());
-        cookie.setPath("/");
-        response.addCookie(cookie);
+        addCookie(response,token,user);
 
         return true;
     }

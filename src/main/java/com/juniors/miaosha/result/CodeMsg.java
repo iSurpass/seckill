@@ -28,7 +28,8 @@ public class CodeMsg {
     //订单模块 5004XX
 
     //秒杀模块 5005XX
-
+    public static CodeMsg MIAO_SHA_OVER = new CodeMsg(500500,"商品已经秒杀完毕");
+    public static CodeMsg REPEAT_ERROR = new CodeMsg(500501,"商品不能重复秒杀");
 
     public CodeMsg(int i, String msg) {
         this.code = i;

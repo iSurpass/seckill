@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>订单页面</title>
+    <script type="text/javascript" th:src="@{/js/jquery-3.4.1.min.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/bootstrap/css/bootstrap.min.css}">
+    <script type="text/javascript" th:src="@{/jquery-validation-master/src/core.js}"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.md5.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/layer/layer.js}"></script>
+</head>
+</head>
+<body>
+    <div class="panel-default">
+        <div class="panel-heading">秒杀订单详情</div>
+        <table class="table" id="goodslist">
+            <tr>
+                <td>商品名称</td>
+                <td th:text="${goods.goodsName}" colspan="3"></td>
+            </tr>
+            <tr>
+                <td>商品图片</td>
+                <td><img colspan="2" th:src="@{${goods.goodsImg}}" height="200" width="200"></td>
+            </tr>
+            <tr>
+                <td>订单价格</td>
+                <td colspan="2" th:text="${orderInfo.goodsPrice}"></td>
+            </tr>
+            <tr>
+                <td>下单时间</td>
+                <td colspan="2" th:text="${#dates.format(goods.startDate,'yyyy-MM-dd HH:mm:ss')}"></td>
+            </tr>
+            <tr>
+                <td>订单状态</td>
+                <td>
+                    <span th:if="${orderInfo eq 0}">未支付</span>
+                    <span th:if="${orderInfo eq 1}">待发货</span>
+                    <span th:if="${orderInfo eq 2}">已发货</span>
+                    <span th:if="${orderInfo eq 3}">已收货</span>
+                    <span th:if="${orderInfo eq 4}">已退款</span>
+                    <span th:if="${orderInfo eq 5}">已完成</span>
+                </td>
+                <td>
+                    <button class="btn btn-primary btn-block" type="submit" id="payButton">立即支付</button>
+                </td>
+            </tr>
+            <tr>
+                <td>收货人</td>
+                <td colspan="2">李俊华 18652930170</td>
+            </tr>
+            <tr>
+                <td>收货地址</td>
+                <td colspan="2">江苏省南京市浦口区学府路8号</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
