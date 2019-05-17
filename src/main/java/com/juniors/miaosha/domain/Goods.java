@@ -4,6 +4,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 /**
+ * 商品类
  * @author Juniors
  */
 @Setter

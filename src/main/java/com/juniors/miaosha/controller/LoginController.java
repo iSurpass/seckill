@@ -36,11 +36,21 @@ public class LoginController {
     @Autowired
     MiaoshaUserService miaoshaUserService;
 
+    /**
+     * 跳转登录页
+     * @return
+     */
     @RequestMapping(path = "/toLogin")
     public String toLogin(){
         return "login";
     }
 
+    /**
+     * 执行登录操作
+     * @param response
+     * @param loginVo
+     * @return
+     */
     @RequestMapping(path = "/doLogin")
     @ResponseBody
     public Result<Boolean> doLogin(HttpServletResponse response, @Valid LoginVo loginVo){

@@ -21,7 +21,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 /**
- * 示例Controller类
+ * 商品Controller类
  * @author Juniors
  */
 @Controller
@@ -40,6 +40,12 @@ public class GoodsController {
     @Autowired
     GoodsService goodsService;
 
+    /**
+     * 跳转商品列表页
+     * @param model
+     * @param user
+     * @return
+     */
     @RequestMapping(path = "/toList")
     public String toList(Model model,
                          MiaoshaUser user){
@@ -52,6 +58,13 @@ public class GoodsController {
         return "goods_list";
     }
 
+    /**
+     * 跳转相应商品详情页
+     * @param model
+     * @param user
+     * @param goodsId
+     * @return
+     */
     @RequestMapping(path = "/toDetail/{goodsId}")
     public String toDetail(Model model, MiaoshaUser user,
                            @PathVariable("goodsId")long goodsId){
@@ -63,9 +76,12 @@ public class GoodsController {
 
         long startAt = goods.getStartDate().getTime();
         long endAt = goods.getEndDate().getTime();
+        //获取系统当前时间
         long now = System.currentTimeMillis();
 
+        //秒杀商品状态
         int miaoshaStatus = 0;
+        //距离秒杀剩余声音
         int remainSecond = 0;
 
         if (now < startAt){ //秒杀还没开始，倒计时

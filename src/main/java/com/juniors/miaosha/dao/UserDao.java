@@ -13,6 +13,11 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface UserDao {
 
+    /**
+     * 以id为主键查询相应用户
+     * @param id
+     * @return
+     */
     @Select("select * from ms_user where id = #{id}")
     public User getById(@Param("id") int id);
 

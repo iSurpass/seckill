@@ -32,6 +32,5 @@ public class GoodsService {
         MiaoshaGoods g = new MiaoshaGoods();
         g.setId(goods.getId());
         goodsDao.reduceStock(g);
-        System.out.println("123123");
     }
 }

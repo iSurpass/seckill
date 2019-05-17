@@ -44,6 +44,13 @@ public class MiaoshaController {
     @Autowired
     MiaoshaService miaoshaService;
 
+    /**
+     * 执行秒杀动作
+     * @param model
+     * @param user
+     * @param goodsId
+     * @return
+     */
     @RequestMapping(path = "/doMiaosha")
     public String doMiaosha(Model model,MiaoshaUser user,
         @RequestParam("goodsId")long goodsId){
@@ -63,11 +70,11 @@ public class MiaoshaController {
         }
 
         //判断是否重复秒杀
-        /*MiaoshaOrder order = orderService.getMiaoshaOrderByUserIdAndGoodsId(user.getId(),goodsId);
+        MiaoshaOrder order = orderService.getMiaoshaOrderByUserIdAndGoodsId(user.getId(),goodsId);
         if (order != null){
             model.addAttribute("errmsg",CodeMsg.REPEAT_ERROR.getMsg());
             return "miaosha_fail";
-        }*/
+        }
 
         //减库存 下订单 写入秒杀订单 ----------事务性操作
         OrderInfo orderInfo = miaoshaService.miaosha(user,goods);

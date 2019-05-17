@@ -6,6 +6,7 @@ import lombok.Setter;
 import java.util.Date;
 
 /**
+ * 订单详情类
  * @author Juniors
  */
 @Setter

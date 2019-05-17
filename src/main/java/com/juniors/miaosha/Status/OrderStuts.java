@@ -13,7 +13,7 @@ public enum OrderStuts {
     private String name;
     private int index;
 
-    private OrderStuts(String name, int index) {
+    OrderStuts(String name, int index) {
         this.name = name;
         this.index = index;
     }

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
+ * 全局报错拦截器
  * @author Juniors
  */
 //面向切面编程 注解注入

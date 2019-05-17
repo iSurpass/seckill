@@ -3,6 +3,7 @@ package com.juniors.miaosha.exception;
 import com.juniors.miaosha.result.CodeMsg;
 
 /**
+ * 全局报错类
  * @author Juniors
  */
 public class GlobalException extends RuntimeException{
