@@ -45,6 +45,10 @@ public class MiaoshaController {
     MiaoshaService miaoshaService;
 
     /**
+     * ---------JMeter压测初试-----------
+     * QPS:1360
+     * 5000 * 10
+     * ---------------------------
      * 执行秒杀动作
      * @param model
      * @param user
