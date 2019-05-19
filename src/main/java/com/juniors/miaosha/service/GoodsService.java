@@ -4,6 +4,7 @@ import com.juniors.miaosha.dao.GoodsDao;
 import com.juniors.miaosha.domain.Goods;
 import com.juniors.miaosha.domain.MiaoshaGoods;
 import com.juniors.miaosha.vo.GoodsVo;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

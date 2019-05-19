@@ -20,4 +20,6 @@ public interface MiaoshaUserDao {
     @Select("select * from ms_user where id = #{id}")
     MiaoshaUser getById(@Param("id") long id);
 
+    @Select("update ms_user set password = #{password} where id = #{id}")
+    void update(MiaoshaUser toBeUpdate);
 }

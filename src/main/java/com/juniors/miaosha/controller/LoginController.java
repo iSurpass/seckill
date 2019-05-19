@@ -58,7 +58,6 @@ public class LoginController {
         logger.info(loginVo.toString());
         //登录
         miaoshaUserService.login(response,loginVo);
-        System.out.println(loginVo.getMobile());
         return Result.success(true);
     }
 }

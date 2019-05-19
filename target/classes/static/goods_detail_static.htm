@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="/jquery-validation-master/src/core.js"></script>
+    <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.md5.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript" src="/layer/layer.js"></script>
+</head>
+<body>
+    <div class="panel-default">
+        <div class="panel-heading">
+            <div class="panel-body">
+                <span id="userTip">抱歉您还没有登录，请登录后再操作</span>
+                <span>抱歉您没有设置收货地址</span>
+            </div>
+            <table class="table" id="goodslist">
+                <tr>
+                    <td>商品名称</td>
+                    <td colspan="3" text="goodsName"></td>
+                </tr>
+                <tr>
+                    <td>商品图片</td>
+                    <td colspan="3"><img id="goodsImg" width="200" height="200" /></td>
+                </tr>
+                <tr>
+                    <td>秒杀开始时间</td>
+                    <td id="startTime"></td>
+                    <td>
+                        <input type="hidden" id="remainSeconds">
+                        <span id="miaoshaTip"></span>
+                    </td>
+                    <td>
+                        <!--<form id="miaoshaForm" method="post" action="/miaosha/doMiaosha">
+                            <button class="btn btn-primary btn-block" type="submit" id="buyButton">立即秒杀</button>
+                            <input type="hidden" name="goodsId" id="goodsId">
+                        </form>-->
+                        <button class="btn btn-primary btn-block" type="button" id="buyButton" onclick="doMiaosha()">立即秒杀</button>
+                        <input type="hidden" name="goodsId" id="goodsId">
+                    </td>
+                </tr>
+                <tr>
+                    <td>商品原价</td>
+                    <td colspan="3" id="goodsPrice"></td>
+                </tr>
+                <tr>
+                    <td>秒杀价</td>
+                    <td colspan="3" id="miaoshaPrice"></td>
+                </tr>
+                <tr>
+                    <td>库存量</td>
+                    <td colspan="3" id="stockCount"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    $(function () {
+        //渲染页面之前先向服务端请求页面所需数据
+        getDetail();
+    })
+
+    function doMiaosha() {
+        $.ajax({
+            url:"/miaosha/doMiaosha",
+            type:"POST",
+            data:{
+                goodsId:$("#goodsId").val()
+            },
+            success:function (data) {
+                if (data.code == 0){
+                    window.location.href="/order_detail.htm?orderId="+data.data.id;
+                } else {
+                    layer.msg(data.msg)
+                }
+            },
+            error:function () {
+                layer.msg("客户端请求有误")
+            }
+        })
+
+    }
+
+    function getDetail() {
+        var goodsId = g_getQueryString("goodsId");
+        $.ajax({
+            url:'/goods/toDetail/'+goodsId,
+            type:"GET",
+            success:function (data) {
+                if (data.code == 0){
+                    console.log(data);
+                    render(data);
+                } else {
+                    layer.msg(data.msg)
+                }
+            },
+            error:function () {
+                layer.msg("客户端请求有误")
+            }
+        })
+    }
+
+    function render(detail) {
+
+        var miaoshaStatus = detail.data.miaoshaStatus;
+        var remainSecond = detail.data.remainSecond;
+        var goods = detail.data.goodsVo;
+        var user = detail.data.user;
+        console.log(remainSecond);
+        if (user){
+            $("#userTip").hide();
+        }
+        $("#goodsName").text(goods.goodsName);
+        $("#goodsImg").attr("src",goods.goodsImg);
+        $("#startTime").text(goods.startDate);
+        $("#remainSeconds").text(remainSecond);
+        $("#goodsId").val(goods.id);
+        $("#goodsPrice").text(goods.goodsPrice);
+        $("#miaoshaPrice").text(goods.miaoshaPrice);
+        $("#stockCount").text(goods.stockCount);
+        countdown(remainSecond);
+    }
+
+    function countdown(remainSecond){
+
+        var remainSecond = remainSecond;
+        var timeout;
+        console.log(remainSecond);
+        if (remainSecond > 0){
+            $("#buyButton").attr("disabled",true);
+            $("#miaoshaTip").text("秒杀倒计时:"+remainSecond+"秒");
+            timeout = setTimeout(function () {
+                $("#countDown").text(remainSecond - 1);
+                $("#remainSeconds").val(remainSecond -1);
+                countdown(remainSecond-1);
+            },1000);
+        } else if(remainSecond == 0){
+            $("#buyButton").attr("disabled",false);
+            if (timeout){
+                clearTimeout(timeout);
+                remainSecond  = 0;
+            }
+            $("#miaoshaTip").html("秒杀进行中！")
+        }else {
+            console.log(remainSecond);
+            $("#buyButton").attr("disabled",true);
+            $("#miaoshaTip").html("秒杀已经结束！")
+        }
+    }
+
+
+</script>
+</html>

@@ -12,4 +12,8 @@ public class MiaoshaUserKey extends BasePrefix{
     }
 
     public static MiaoshaUserKey token = new MiaoshaUserKey(TOKEN_EXPIRE,"tk");
+
+    //对象级缓存 有效时间永久
+    public static MiaoshaUserKey getById = new MiaoshaUserKey(0,"id");
+
 }

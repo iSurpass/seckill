@@ -23,7 +23,7 @@
                 <td th:text="${goods.miaoshaPrice}"></td>
                 <td th:text="${goods.stockCount}"></td>
                 <td th:text="${goods.startDate}"></td>
-                <td><a th:href="'/goods/toDetail/'+${goods.id}">商品详情</a></td>
+                <td><a th:href="'/goods_detail_static.htm?goodsId='+ ${goods.id}">商品详情</a></td>
             </tr>
         </table>
     </div>

@@ -31,13 +31,59 @@ public class MiaoshaUserService {
     @Autowired
     RedisService redisService;
 
+    /**
+     * 对象级缓存实例
+     * @param id
+     * @return
+     */
     public MiaoshaUser getById(long id){
 
-        return miaoshaUserDao.getById(id);
+        //去缓存里取
+        MiaoshaUser user = redisService.get(MiaoshaUserKey.getById,""+id,MiaoshaUser.class);
+        if (user != null){
+            return user;
+        }
+        //如果redis缓存中没有用户数据则向数据库里取并加载到redis中
+        user =  miaoshaUserDao.getById(id);
+        if (user != null){
+            redisService.set(MiaoshaUserKey.getById,""+id,user);
+        }
+        return user;
+    }
 
+    /**
+     *
+     * @param token
+     * @param id
+     * @param formPassword
+     * @return
+     */
+    public boolean updatePassword(String token,long id,String formPassword){
+
+        MiaoshaUser user = getById(id);
+        if (user == null){
+            throw new GlobalException(CodeMsg.USER_NOT_EXIST);
+        }
+        //更新数据库
+        MiaoshaUser toBeUpdate = new MiaoshaUser();
+        toBeUpdate.setId(id);
+        toBeUpdate.setPassword(MD5Util.formPwdToDB(formPassword,user.getSalt()));
+        miaoshaUserDao.update(toBeUpdate);
+        //****更新处理redis缓存*******
+        redisService.delete(MiaoshaUserKey.getById,""+id);
+        //****token不能Delete而是重新set，否则造成数据不一致的严重后果
+        user.setPassword(toBeUpdate.getPassword());
+        redisService.set(MiaoshaUserKey.token,token,user);
+        return true;
     }
 
 
+    /**
+     *
+     * @param response
+     * @param token
+     * @return
+     */
     public MiaoshaUser getByToken(HttpServletResponse response,String token){
         if (StringUtils.isEmpty(token)){
             return null;
@@ -51,6 +97,12 @@ public class MiaoshaUserService {
     }
 
 
+    /**
+     *
+     * @param response
+     * @param token
+     * @param user
+     */
     private void addCookie(HttpServletResponse response,String token,MiaoshaUser user){
         //
         redisService.set(MiaoshaUserKey.token,token,user);
