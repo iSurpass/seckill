@@ -36,6 +36,6 @@ public interface GoodsDao {
      * 库存减一操作
      * @param g
      */
-    @Update("update ms_goods set stock_count = stock_count - 1 where goods_id = #{goodsId}")
+    @Update("update ms_goods set stock_count = stock_count - 1 where goods_id = #{goodsId} and stock_count > 0")
     void reduceStock(MiaoshaGoods g);
 }

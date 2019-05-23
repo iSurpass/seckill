@@ -158,7 +158,7 @@ public class RedisService {
      * @param <T>
      * @return
      */
-    private <T> String beanToString(T value) {
+        public static <T> String beanToString(T value) {
         if (value == null){
             return null;
         }

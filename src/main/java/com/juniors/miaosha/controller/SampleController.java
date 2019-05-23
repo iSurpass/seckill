@@ -1,6 +1,7 @@
 package com.juniors.miaosha.controller;
 
 import com.juniors.miaosha.domain.User;
+import com.juniors.miaosha.rabbitmq.MQSender;
 import com.juniors.miaosha.redis.UserKey;
 import com.juniors.miaosha.result.CodeMsg;
 import com.juniors.miaosha.result.Result;
@@ -27,6 +28,42 @@ public class SampleController {
 
     @Autowired
     RedisService redisService;
+
+    @Autowired
+    MQSender mqSender;
+
+    @RequestMapping(path = "/mq")
+    @ResponseBody
+    public Result<String> mq(){
+
+        mqSender.send("Hello juniors!");
+        return Result.success("Skr");
+        //return new Result(0,"success","Skr");      优化前的语句逻辑，这就是使用 泛型 的好处
+    }
+
+    @RequestMapping(path = "/Topicmq")
+    @ResponseBody
+    public Result<String> mqTopic(){
+
+        mqSender.sendTopic("Hello harden!");
+        return Result.success("Skr~");
+    }
+
+    @RequestMapping(path = "/Fanoutmq")
+    @ResponseBody
+    public Result<String> mqFanout(){
+
+        mqSender.sendFanout("Hello kobe!");
+        return Result.success("Skr~");
+    }
+
+    @RequestMapping(path = "/Headersmq")
+    @ResponseBody
+    public Result<String> mqHeaders(){
+
+        mqSender.sendHeaders("Hello James!");
+        return Result.success("Skr~");
+    }
 
     /**
      * thymeleaf模板实例

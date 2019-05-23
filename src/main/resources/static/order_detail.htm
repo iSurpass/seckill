@@ -22,7 +22,7 @@
             </tr>
             <tr>
                 <td>商品图片</td>
-                <td><img colspan="2" src="goodsImg" height="200" width="200"></td>
+                <td><img colspan="2" id="goodsImg" height="200" width="200"></td>
             </tr>
             <tr>
                 <td>订单价格</td>
@@ -35,15 +35,11 @@
             <tr>
                 <td>订单状态</td>
                 <td id="orderStatus">
-                    <span if="orderInfo eq 0">未支付</span>
-                    <span "orderInfo eq 1">待发货</span>
-                    <span "${orderInfo eq 2">已发货</span>
-                    <span ="orderInfo eq 3">已收货</span>
-                    <span if="${orderInfo eq 4">已退款</span>
-                    <span if="${orderInfo eq 5">已完成</span>
                 </td>
                 <td>
-                    <button class="btn btn-primary btn-block" type="submit" id="payButton">立即支付</button>
+                    <a href="alipay.html">
+                    <button class="btn btn-primary btn-block" type="button" id="payButton">立即支付</button>
+                    </a>
                 </td>
             </tr>
             <tr>
@@ -57,4 +53,50 @@
         </table>
     </div>
 </body>
+
+<script>
+    $(function () {
+        //渲染页面之前先向服务端请求页面所需数据
+        getOrderDetail();
+    });
+
+    function getOrderDetail() {
+        var orderId = g_getQueryString("orderId");
+        $.ajax({
+            url:"/order/detail/",
+            type:"GET",
+            data:{
+                orderId:orderId
+            },
+            success:function (data) {
+                if (data.code == 0){
+                    render(data.data)
+                } else {
+                    layer.msg(data.msg)
+                }
+            },
+            error:function () {
+                layer.msg("客户端请求有误")
+            }
+        })
+
+    }
+
+    function render(detail) {
+        var goods = detail.goods;
+        var order = detail.order;
+        $("#goodsName").text(goods.goodsName);
+        $("#goodsImg").attr("src",goods.goodsImg);
+        $("#goodsPrice").text(order.goodsPrice);
+        $("#createDate").text(order.createDate);
+        var status = "";
+        if (order.status == 0){
+            status = "未支付";
+        } else {
+            status = "待发货"
+        }
+        $("#orderStatus").text(status);
+    }
+
+</script>
 </html>
