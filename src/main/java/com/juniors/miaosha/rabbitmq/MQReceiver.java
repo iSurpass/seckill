@@ -1,8 +1,20 @@
 package com.juniors.miaosha.rabbitmq;
 
+import com.juniors.miaosha.domain.MiaoshaOrder;
+import com.juniors.miaosha.domain.MiaoshaUser;
+import com.juniors.miaosha.domain.OrderInfo;
+import com.juniors.miaosha.redis.RedisService;
+import com.juniors.miaosha.result.CodeMsg;
+import com.juniors.miaosha.result.Result;
+import com.juniors.miaosha.service.GoodsService;
+import com.juniors.miaosha.service.MiaoshaService;
+import com.juniors.miaosha.service.MiaoshaUserService;
+import com.juniors.miaosha.service.OrderService;
+import com.juniors.miaosha.vo.GoodsVo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -13,6 +25,46 @@ import org.springframework.stereotype.Service;
 public class MQReceiver {
 
     public static Logger log = LoggerFactory.getLogger(MQReceiver.class);
+
+    @Autowired
+    RedisService redisService;
+
+    @Autowired
+    MiaoshaUserService miaoshaUserService;
+
+    @Autowired
+    GoodsService goodsService;
+
+    @Autowired
+    OrderService orderService;
+
+    @Autowired
+    MiaoshaService miaoshaService;
+
+    @RabbitListener(queues = MQConfig.MIAOSHA_QUEUE)
+    public void receiveMS(String message){
+        log.info("Receive MSMessage :"+message);
+        MiaoshaMessage mm = RedisService.stringToBean(message,MiaoshaMessage.class);
+        MiaoshaUser user = mm.getUser();
+        long goodsId = mm.getGoodsId();
+
+        //判断数据库库存
+        GoodsVo goods = goodsService.getGoodsVoByGoodsId(goodsId);
+        int stock = goods.getStockCount();
+        if (stock <= 0){
+            return;
+        }
+
+        //判断是否重复秒杀
+        MiaoshaOrder order = orderService.getMiaoshaOrderByUserIdAndGoodsId(user.getId(),goodsId);
+        if (order != null){
+            return;
+        }
+
+        //减库存 下订单 写入秒杀订单 ----------事务性操作
+        OrderInfo orderInfo = miaoshaService.miaosha(user,goods);
+
+    }
 
     @RabbitListener(queues = MQConfig.QUEUE)
     public void receive(String message){

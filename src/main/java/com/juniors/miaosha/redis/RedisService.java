@@ -182,7 +182,7 @@ public class RedisService {
      * @param <T>
      * @return
      */
-    private <T> T stringToBean(String str,Class<T> clazz) {
+    public static <T> T stringToBean(String str,Class<T> clazz) {
 
         if (str == null || str.length() <= 0 || clazz == null){
             return null;

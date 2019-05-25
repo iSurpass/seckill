@@ -15,6 +15,7 @@ public class MQConfig {
 
     //
     public static final String QUEUE = "queue";
+    public static final String MIAOSHA_QUEUE = "msQueue";
     public static final String TOPIC_QUEUE1 = "topicQueue1";
     public static final String TOPIC_QUEUE2 = "topicQueue2";
     public static final String FANOUT_QUEUE1 = "fanoutQueue1";

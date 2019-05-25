@@ -13,4 +13,5 @@ public class GoodsKey extends BasePrefix{
     public static GoodsKey getGoodsList = new GoodsKey(60,"gl");
     //缓存商品详情页有效时间 60s
     public static GoodsKey getGoodsDetail = new GoodsKey(60,"gd");
+    public static GoodsKey getGoodsStock = new GoodsKey(0,"gs");
 }

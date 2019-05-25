@@ -1,6 +1,5 @@
 package com.juniors.miaosha.dao;
 
-import com.juniors.miaosha.domain.Goods;
 import com.juniors.miaosha.domain.MiaoshaGoods;
 import com.juniors.miaosha.vo.GoodsVo;
 import org.apache.ibatis.annotations.Mapper;
@@ -37,5 +36,5 @@ public interface GoodsDao {
      * @param g
      */
     @Update("update ms_goods set stock_count = stock_count - 1 where goods_id = #{goodsId} and stock_count > 0")
-    void reduceStock(MiaoshaGoods g);
+    int reduceStock(MiaoshaGoods g);
 }
